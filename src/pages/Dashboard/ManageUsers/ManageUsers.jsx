@@ -31,7 +31,7 @@ const ManageUsers = () => {
                     </thead>
                     <tbody>
                      {
-                        users?.map((user,index)=> <UsersRow key={index} user={user} refetch={refetch} index={index}/>)
+                        users?.map((user,index)=> <UsersRow key={index} user={user} refetch={refetch} index={index} />)
                      }
                     </tbody>
                 </table>
