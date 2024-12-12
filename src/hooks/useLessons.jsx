@@ -6,7 +6,7 @@ const useLessons = () => {
     
     const axiosApi = usePubAxios()
     
-    const {data,isLoading} = useQuery({
+    const {data,isLoading,refetch} = useQuery({
         queryKey: ["lessons"],
         queryFn: async()=>{
             const {data} = await axiosApi.get("/lessons")
@@ -15,7 +15,7 @@ const useLessons = () => {
     })
  
 
-    return [data,isLoading]
+    return [data,isLoading,refetch]
 };
 
 export default useLessons;

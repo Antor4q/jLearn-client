@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 const LessonRow = ({lesson}) => {
    
     return (
-        <tr className="text-xl font-medium">
+        <tr className="md:text-xl md:font-medium">
         <td>{lesson.number}</td>
         <td>{lesson.name}</td>
         
