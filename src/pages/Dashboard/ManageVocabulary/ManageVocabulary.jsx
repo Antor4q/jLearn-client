@@ -84,7 +84,7 @@ const ManageVocabulary = () => {
                 </thead>
                 <tbody>
                 {
-                    vocabularies?.map((vocabulary,index) => <VocabularyRow key={index} vocabulary={vocabulary}/>)
+                    vocabularies?.map((vocabulary,index) => <VocabularyRow key={index} vocabulary={vocabulary} refetch={refetch}/>)
                 }
                 </tbody>
             </table>
