@@ -48,6 +48,10 @@ const ManageLesson = () => {
         mutateAsync(lesson)
     }
 
+    if(isLoading){
+        return <span className="text-4xl font-bold text-center">Loading...</span>
+    }
+
     return (
         <div className="bg-gray-200 min-h-screen lg:px-10">
              <div className="px-4 lg:px-0">
