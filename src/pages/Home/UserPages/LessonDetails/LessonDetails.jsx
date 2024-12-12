@@ -30,7 +30,7 @@ const LessonDetails = () => {
       const handleComplete = () => {
         setShowConfetti(true)
         setTimeout(() => {
-          window.location.href = "/lessons"; 
+          window.location.href = "/"; 
         }, 3000);
       };
     
