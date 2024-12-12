@@ -17,7 +17,7 @@ const NavbarComponent = () => {
              <Navbar className='border-none'>
       <NavbarContainer>
         <NavbarBrand>
-           <h3 className="text-3xl font-semibold">jLearn</h3>
+           <h3 className="text-3xl font-bold font-serif"><span className='text-blue-600'>j</span>Learn</h3>
         </NavbarBrand>
         <NavbarList>
           <NavbarItem><NavLink style={({isActive})=> isActive? {color: "#0D6EFD",background:"none"}:{}} to="/">Home </NavLink></NavbarItem>
