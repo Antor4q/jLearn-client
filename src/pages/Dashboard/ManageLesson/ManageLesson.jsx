@@ -5,7 +5,7 @@ import LessonRow from "./LessonRow";
 import { useState } from "react";
 import usePubAxios from "../../../hooks/usePubAxios";
 import { useMutation } from "@tanstack/react-query";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 
 
 const ManageLesson = () => {
@@ -53,7 +53,8 @@ const ManageLesson = () => {
              <div className="px-4 lg:px-0">
              <h4 className="md:text-4xl  text-2xl font-semibold pt-10">Manage all lessons</h4>
 
-<button onClick={openModal} className="bg-blue-500 px-4  gap-2 mt-6 text-white md:text-xl md:font-medium flex items-center p-3 rounded-xl"><MdAdd/> Create lesson</button>
+            <button onClick={openModal} className="bg-blue-500 px-4  gap-2 mt-6 text-white md:text-xl md:font-medium flex items-center p-3 rounded-xl"><MdAdd/> Create lesson</button>
+            <Toaster/>
              </div>
 
             <div className="lg:p-8 my-20  rounded-lg bg-white ">
@@ -75,7 +76,7 @@ const ManageLesson = () => {
                     <tbody>
                      {/* row here */}
                      {
-                        data?.map((lesson,index)=> <LessonRow key={index} lesson={lesson}/>)
+                        data?.map((lesson,index)=> <LessonRow key={index} lesson={lesson} refetch={refetch}/>)
                      }
                     </tbody>
                 </table>
