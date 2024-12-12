@@ -4,10 +4,11 @@ import tutorial from "../../../../../public/tut1.jpg"
 
 
 
+
 const Lessons = () => {
     
 
-   
+  //  const [data,isLoading] = useLessons()
 
       const lessons = [
         { id: 1, name: 'Basic Greetings', number: 1, vocabCount: 10 },
@@ -22,7 +23,6 @@ const Lessons = () => {
         { id: 10, name: 'Emergency Situations', number: 10, vocabCount: 7 },
       ];
       
-
 
 
     return (
