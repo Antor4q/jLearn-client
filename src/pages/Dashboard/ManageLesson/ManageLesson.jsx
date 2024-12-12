@@ -1,8 +1,12 @@
-import { FaEdit } from "react-icons/fa";
-import { MdDelete } from "react-icons/md";
+
+import useLessons from "../../../hooks/useLessons";
+import LessonRow from "./LessonRow";
 
 
 const ManageLesson = () => {
+
+    const [data] = useLessons()
+    console.log(data)
     return (
         <div className="bg-gray-200 h-screen lg:px-10">
              <h4 className="text-4xl font-semibold pt-10">Manage all lessons</h4>
@@ -24,14 +28,10 @@ const ManageLesson = () => {
                     </tr>
                     </thead>
                     <tbody>
-                      <tr className="text-xl font-medium">
-                        <td>1</td>
-                        <td>Greetings</td>
-                        
-                        <td>10</td>
-                        <td><button className="text-white p-2 bg-blue-600 rounded-xl text-xl font-medium"><FaEdit/></button></td>
-                        <td> <button className="text-white bg-red-500 p-2 rounded-xl text-xl font-medium"><MdDelete/></button></td>
-                      </tr>
+                     {/* row here */}
+                     {
+                        data?.map((lesson,index)=> <LessonRow key={index} lesson={lesson}/>)
+                     }
                     </tbody>
                 </table>
             </div>
