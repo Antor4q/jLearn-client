@@ -7,7 +7,7 @@ import {
     NavbarItem,
     NavbarList,
   } from 'keep-react'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
   
 
 
@@ -24,7 +24,7 @@ const NavbarComponent = () => {
           <NavbarItem><NavLink style={({isActive})=> isActive? {color: "#0D6EFD",background:"none"}:{}} to="/lessons">Lessons </NavLink></NavbarItem>
           <NavbarItem><NavLink style={({isActive})=> isActive? {color: "#0D6EFD",background:"none"}:{}} to="tutorials">Tutorials </NavLink></NavbarItem>
          
-          <NavbarItem active>SignIn</NavbarItem>
+          <NavbarItem active><Link to="/dashboard">Dashboard</Link></NavbarItem>
         </NavbarList>
         <NavbarCollapseBtn />
         <NavbarCollapse>
