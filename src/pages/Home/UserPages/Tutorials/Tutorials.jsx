@@ -18,7 +18,7 @@ const Tutorials = () => {
     return (
        <section >
          <div
-                className="w-full relative h-[400px] lg:h-[600px] bg-no-repeat bg-cover bg-center"
+                className="w-full relative h-[400px]  bg-no-repeat bg-cover bg-center"
                 style={{
                     backgroundImage: `url(${tutorial})`,
                 }}
