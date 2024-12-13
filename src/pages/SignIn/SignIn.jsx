@@ -13,7 +13,7 @@ const SignIn = () => {
     const password = e.target.password.value;
 
     try {
-      const response = await axios.post("http://localhost:5000/singIn", { email, password });
+      const response = await axios.post("https://j-learn-server.vercel.app/singIn", { email, password });
       const { token } = response.data;
 
       localStorage.setItem("token", token);

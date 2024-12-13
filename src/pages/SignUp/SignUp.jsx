@@ -14,7 +14,7 @@ const SignUp = () => {
     const password = e.target.password.value;
     const photo = e.target.photo.files[0];
     try {
-      await axios.post("http://localhost:5000/register", { name, email, password,photo });
+      await axios.post("https://j-learn-server.vercel.app/register", { name, email, password,photo });
       toast.success("You have successfully register")
       navigate("/signIn");
     } catch (error) {
