@@ -43,7 +43,7 @@ const SignIn = () => {
         <button type="submit" className="w-full bg-blue-500 text-white font-medium py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Login</button> <Toaster/>
 
         <div className="mt-4 text-center">
-          <span>Don`t have an account? <Link to="/signup" className="text-blue-500">Sign Up</Link></span>
+          <span>Don`t have an account? <Link to="/signUp" className="text-blue-500">Sign Up</Link></span>
         </div>
       </form>
     </div>

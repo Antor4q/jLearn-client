@@ -49,7 +49,7 @@ const SignUp = () => {
           <Toaster/>
   
           <div className="mt-4 text-center">
-            <span>Already have an account? <a href="/signin" className="text-blue-500">Sign In</a></span>
+            <span>Already have an account? <a href="/signIn" className="text-blue-500">Sign In</a></span>
           </div>
         </form>
       </div>
